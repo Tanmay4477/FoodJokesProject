@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Food Jokes</title>
+</head>
+<body>
+    <h1>Generate a Random Food Joke</h1>
+    <button onclick="generateJoke()">Generate Now</button>
+    <div id="result"></div>
+
+    <script>
+        async function generateJoke() {
+            const result = document.querySelector("#result");
+            const response = await fetch('/jokes');
+            const data = await response.json();
+            result.textContent = data;
+        }
+    </script>
+</body>
+</html>

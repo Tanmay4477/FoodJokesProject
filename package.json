@@ -1,0 +1,17 @@
+{
+  "name": "foodproject",
+  "version": "1.0.0",
+  "description": "2ba9b71649714b938b6546ff322b5157",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "express": "^4.19.2",
+    "path": "^0.12.7"
+  }
+}
